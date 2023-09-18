@@ -73,3 +73,17 @@ If you want to ensure that both Virtual Machines are on the same Vnet, in the se
 <img width="746" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/ee5e951b-b0e1-4401-8199-2c55d3f11577">
 <img width="499" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/fe49a417-1f1f-488d-82a4-f83269fe232b">
 
+8. In the Azure portal, join Client-1. To do that, we need to set Client-1's DNS settings to DC's private ip address. First retrieve DC's ip address, then go into client-1's virtual machine -> Networking  -> Network interface -> DNS servers -> Custom -> enter DC's private IP address -> save. Restart the virtual machine in the azure portal. Now, log back into the original admin (mine was jfields) and join it to the domain (if you skip this step, you will get an error). Do this by start -> settings -> system -> About -> Rename this PC advanced -> click domain and enter the domain that you created then enter the credentials. It should welcome you if you did it correctly and restart. Login to the domain controller  and verify client-1 shows up in Active Directory Users and Computers
+
+<img width="1034" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/fa5e2f92-68a9-4682-8cc7-17cb58ec4c20">
+<img width="947" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/44ca6173-1266-45cf-90f9-ee80c1363c25">
+<img width="370" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/979a03ab-e93f-4f50-b2d9-2590da9e5349">
+<img width="324" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/01c3e318-2d37-4654-b3c7-ece96830b53c">
+<img width="735" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/aaad353b-0931-41b1-b189-edd0bcb48058">
+
+
+
+
+
+
+
