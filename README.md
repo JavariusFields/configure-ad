@@ -86,7 +86,14 @@ If you want to ensure that both Virtual Machines are on the same Vnet, in the se
 <img width="902" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/018089ba-4061-40d4-93c6-1cc50fbb6a3c">
 <img width="376" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/ee9fa6c1-8099-458f-bfb4-8cabf3528cc6">
 
-10. 
+10. Create a bunch of additional users and attempt to log in with one at the end. Open Powershell ISE as an administrator (right click and run as administrator). Create a new file and paste the contents of the script from here (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1). Run the script and observe the accounts being created into the _EMPLOYEES folder that you created. Log in to one of the user names in Client-1 Note: If you keep getting red notifications while trying to the running the script, it is more the likely possible that you didn't run the Powershell ISE as an admin. Just close it and start over
+
+11. Congratulations. You now have Active Directory installed on your virtual machine
+
+<img width="720" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/4b725697-876d-4b6a-9a13-7447b364b660">
+<img width="745" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/f25baa4d-6b0e-4b9c-ad65-32628b52eccf">
+
+
 
 
 
