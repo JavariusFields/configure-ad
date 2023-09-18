@@ -49,28 +49,25 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="245" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/e7178c63-2ebd-487f-a784-e3efb98b08dd">
 <img width="519" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/4d272543-a896-4eff-b4e4-a9a29270a352">
 
+If you want to ensure that both Virtual Machines are on the same Vnet, in the search type Network Watcher -> Monitoring -> Topology. Note how you can see that both of my VMs are on the same Vnet.
 
+<img width="948" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/c09aa6df-974f-4c5e-ac40-c958a69d2fee">
 
+5. To ensure that connectivity between the client and domain controller, log into client- 1 on the microsoft remote desktop and ping DC-1's private IP with a perpetual ping (-t). It should fail. While the ping is still going, log into DC-1 type firewall in the start menu -> click advanced firewall settings -> enable ICMPv4 on the firewall -> note how the traffic is allowed now back in client-1. To stop the ping, cmd (control)-C. Connectivity has been verified.
 
+<img width="977" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/126b13fb-8f23-4f32-bd16-a746aa8e78ea">
+<img width="690" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/1c969b31-fb20-4006-bea5-ed5582cf9da5">
+<img width="201" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/85036ae6-c107-4c66-9a5a-24e98d475bd9">
+<img width="1029" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/3623baea-81f6-47d3-806e-fc7240412cfa">
+<img width="975" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/50176bfb-9015-49be-a651-96e943d80b82">
 
+6. Install Active Directory. Add roles and features -> Active Directory Domain Services -> Install -> Close. Promote as a DC by clicking the yellow triangle at the top right -> click "promote this domain to a domain controller" -> setup new forest -> create a root domain name (i just used ministryofmagic.com) -> install. Restart and log back into DC-1 as user ministryofmagic.com\jfields (or whatever you named yours) 
 
+<img width="784" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/7daf0431-4980-4436-bc2a-ea957fb43cbe">
+<img width="285" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/5eb9e6ab-f3e5-4e44-b730-56a4e31a221e">
+<img width="1245" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/ce26ad97-0a5f-456f-8f11-50864b74975e">
 
+7. Create 3 Organizational Units in the servar manager by clicking tools in the right corner -> Active Directory Users and Computers -> Right Click -> New -> Organizational Unit (OU) -> Create a new unit named _EMPLOYEESS and then use the same process to create OUs _ADMINS and _CLIENTS. Finally, create a new user named "Harry Potter" (right click-> new-> user) with a user name "harry_admin". Add Harry to the "Domain Admins" security group by double clicking -> member of -> add -> type "domain" -> check names -> 
 
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<img width="1044" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/d63168f6-7618-4193-9ebb-cb24e2fb27a4">
+<img width="746" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/ee5e951b-b0e1-4401-8199-2c55d3f11577">
