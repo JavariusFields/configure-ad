@@ -67,7 +67,9 @@ If you want to ensure that both Virtual Machines are on the same Vnet, in the se
 <img width="285" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/5eb9e6ab-f3e5-4e44-b730-56a4e31a221e">
 <img width="1245" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/ce26ad97-0a5f-456f-8f11-50864b74975e">
 
-7. Create 3 Organizational Units in the servar manager by clicking tools in the right corner -> Active Directory Users and Computers -> Right Click -> New -> Organizational Unit (OU) -> Create a new unit named _EMPLOYEESS and then use the same process to create OUs _ADMINS and _CLIENTS. Finally, create a new user named "Harry Potter" (right click-> new-> user) with a user name "harry_admin". Add Harry to the "Domain Admins" security group by double clicking -> member of -> add -> type "domain" -> check names -> 
+7. Create 3 Organizational Units in the servar manager by clicking tools in the right corner -> Active Directory Users and Computers -> Right Click -> New -> Organizational Unit (OU) -> Create a new unit named _EMPLOYEESS and then use the same process to create OUs _ADMINS and _CLIENTS. Finally, create a new user named "Harry Potter" (right click-> new-> user) with a user name "harry_admin". Add Harry to the "Domain Admins" security group by double clicking -> member of -> add -> type "domain" -> check names -> domain admins -> apply and okay. 
 
 <img width="1044" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/d63168f6-7618-4193-9ebb-cb24e2fb27a4">
 <img width="746" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/ee5e951b-b0e1-4401-8199-2c55d3f11577">
+<img width="499" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/fe49a417-1f1f-488d-82a4-f83269fe232b">
+
