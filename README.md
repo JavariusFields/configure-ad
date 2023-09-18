@@ -81,6 +81,16 @@ If you want to ensure that both Virtual Machines are on the same Vnet, in the se
 <img width="324" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/01c3e318-2d37-4654-b3c7-ece96830b53c">
 <img width="735" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/aaad353b-0931-41b1-b189-edd0bcb48058">
 
+9. Setup Remote Desktop for non-administative users. Log on to Client-1 as the domain you created -> start -> settings -> System -> and Remote Desktop. Then click select users that can remotely access this PC -> add -> type domain users and check names -> press "okay" 
+
+<img width="902" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/018089ba-4061-40d4-93c6-1cc50fbb6a3c">
+<img width="376" alt="image" src="https://github.com/JavariusFields/configure-ad/assets/144845191/ee9fa6c1-8099-458f-bfb4-8cabf3528cc6">
+
+10. 
+
+
+
+
 
 
 
